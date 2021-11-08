@@ -1,0 +1,41 @@
+.home {
+    width: 100%;
+    height: 100%;
+    padding: 40px var(--gutter);
+}
+
+.home .app-drawer {
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+    grid-template-columns: repeat(4, 55px);
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.home .app-drawer .app {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background-image: url(../assets/apps/phone.png);
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
+}
+
+.home .app-drawer .app .notifications {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 66, 66);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10pt;
+}

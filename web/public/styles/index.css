@@ -1,0 +1,235 @@
+@import url(./home.css);
+@import url(./phone.css);
+@import url(./messages.css);
+@import url(./contacts.css);
+@import url(./settings.css);
+@import url(./twitter.css);
+@import url(./camera.css);
+@import url(./gallery.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    user-select: none;
+}
+
+:root { 
+    --gutter: 20px;
+}
+
+::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 290px;
+    height: 615px;
+    overflow: hidden;
+}
+
+.case {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/phone.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 97%;
+    height: 96%;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 5px 2px;
+    z-index: 9;
+
+    /* background stuff */
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(29, 29, 29);
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 0 var(--gutter);
+    padding-top: 8px;
+    padding-bottom: 5px;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 10pt;
+    line-height: 10px;
+    z-index: 5;
+}
+
+.header .icons {
+    display: flex;
+    font-size: 12pt;
+    gap: 5px;
+    margin-bottom: 1px;
+}
+
+.home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    height: 1.2%;
+}
+
+.home-btn div {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+.home-btn div:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* notifications */
+.notify {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    padding: 0 15px;
+    padding-top: 40px;
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    width: 100%;
+    height: fit-content;
+    padding: 3px;
+    color: white;
+    font-size: 10pt;
+    pointer-events: all;
+}
+
+.notification .head {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.notification img {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.notification .title {
+    line-height: 0px;
+}
+
+.notification .msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification .msg .actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 8pt;
+    line-height: 0;
+}
+
+.notification .msg .actions div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.accept {
+    background-color: rgb(71, 163, 83);
+}
+
+.decline {
+    background-color: rgb(184, 45, 45);
+}
+
+.Toastify__toast-container {
+    position: absolute !important;
+    width: 100% !important;
+    margin: 0 !important;
+    top: 30px !important;
+    padding-inline: 15px !important;
+    pointer-events: none !important;
+    z-index: 4 !important;
+}
+
+.Toastify__toast-container--top-center {
+    position: absolute !important;
+    width: 100% !important;
+    right: 0 !important;
+    top: 30px !important;
+    margin: 0 !important;
+    padding-inline: 15px !important;
+}
+
+.Toastify__toast {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 !important;
+    margin-block: 5px !important;
+    width: 100% !important;
+    height: fit-content !important;
+    min-height: fit-content !important;
+    padding: 5px !important;
+    border-radius: 10px !important;
+    background-color: rgba(58, 58, 58, 0.99) !important;
+    color: white !important;
+    font-size: 10pt !important;
+    cursor: default !important;
+}
+
+
+.Toastify__toast-body {
+    width: 100% !important;
+    height: fit-content !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}

@@ -1,0 +1,119 @@
+.settings {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.98);
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.settings h1 {
+    font-size: 18pt;
+    margin-bottom: 5px;
+}
+
+.settings label {
+    font-size: 10pt;
+}
+
+.settings input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    text-indent: 2px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+
+.settings input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.settings button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 12pt;
+    border-radius: 5px;
+}
+
+.settings button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.settings .page {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--gutter);
+    padding-top: 40px;
+}
+
+.settings .page header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.settings .page header button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 10pt;
+}
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.5);
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 85%;
+    bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#version {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+.modal button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: normal;
+    font-size: 12pt;
+    opacity: 1;
+    background-color: rgb(59, 59, 59);
+}
+
+.modal button:hover {
+    background-color: rgb(94, 94, 94);
+}

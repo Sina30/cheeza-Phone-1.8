@@ -1,0 +1,59 @@
+.camera {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0 var(--gutter);
+    padding-top: 40px;
+}
+
+.camera header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.camera header h1 {
+    font-size: 18pt;
+}
+
+.camera img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.camera .cam-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.camera button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 18pt;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 100%;
+}
+
+.camera button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.camera button:disabled {
+    opacity: 0.5;
+}

@@ -1,0 +1,69 @@
+.phone-app {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 50px var(--gutter);
+}
+
+.phone-app .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23pt;
+    width: 100%;
+    height: 100%;
+}
+
+.phone-app .info span {
+    width: 100%;
+    text-align: center;
+    user-select: text;
+    word-wrap: break-word;
+}
+
+.dialer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.number:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dialer #call {
+    background: rgba(124, 209, 27, 0.5);
+}
+
+.dialer #delete {
+    background: rgba(209, 27, 27, 0.5);
+}
+
+.dialer #call:hover {
+    background: rgb(109, 179, 29);
+}
+
+.dialer #delete:hover {
+    background: rgb(180, 30, 30);
+}

@@ -1,0 +1,320 @@
+.twitter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.twitter .page {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--gutter);
+}
+
+.twitter header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.twitter header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.twitter header .logo {
+    display: block;
+}
+
+.twitter .account {
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.twitter input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    text-indent: 2px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+.twitter input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.twitter input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.twitter main {
+    width: 100%;
+    height: 100%;
+}
+
+.twitter footer {
+    width: 100%;
+    height: 35px;
+}
+
+.twitter #tweets {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.twitter #tweets::-webkit-scrollbar {
+    display: none;
+}
+
+.twitter main {
+    overflow-y: hidden;
+}
+
+.twitter .send {
+    position: absolute;
+    will-change: transform; 
+    right: 22px;
+    font-size: 12pt;
+    bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    line-height: 0;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+}
+
+.twitter .send:active {
+    background-color: rgb(145, 171, 218);
+}
+
+.twitter .tweet {
+    width: 100%;
+    padding: 7px 2px;
+    font-size: 10pt;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.twitter .tweet img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.twitter .tweet .author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.twitter .tweet .author div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: cornflowerblue;
+}
+
+.twitter .tweet .author span {
+    opacity: 0.75;
+    font-size: 8pt;
+}
+
+.twitter .tweet .account {
+    width: 20px;
+    height: 20px;
+}
+
+.twitter .tweet .actions {
+    display: flex;
+    width: 100%;
+    height: 21px;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.twitter .tweet .actions button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10pt;
+}
+
+.twitter .tweet .actions button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.twitter #account header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.twitter #account header button {
+    padding: 5px;
+    line-height: 0;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.twitter #account header button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.twitter #account main form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.twitter #account main input {
+    font-size: 12pt;
+}
+
+.twitter #account main label {
+    font-size: 10pt;
+}
+
+.twitter #account main .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+} 
+
+.twitter #account main button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.twitter #account main button:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.twitter .account-null {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12pt;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.twitter .account-null:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.twitter .tweet-modal {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 275px;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px 20px 0 0;
+    padding: 10px var(--gutter);
+    padding-bottom: 30px;
+}
+
+.twitter .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.twitter .tweet-modal form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.twitter .tweet-modal textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    text-indent: 2px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    resize: none;
+}
+
+.twitter .tweet-modal form button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    height: fit-content;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.twitter .tweet-modal form button.i {
+    line-height: 0;
+    font-size: 14pt;
+}
+
+.twitter .tweet-modal form button:active {
+    background-color: rgb(141, 169, 219);
+}

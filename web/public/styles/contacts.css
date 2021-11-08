@@ -1,0 +1,181 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contacts header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacts input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border: none;
+    text-indent: 2px;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+.contacts input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts header .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contacts h1 {
+    font-size: 18pt;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contacts button {
+    padding: 5px;
+    line-height: 0;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 14pt;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contacts button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 5px;
+    padding-bottom: 25px;
+    overflow-y: auto;
+}
+
+.contacts main::-webkit-scrollbar {
+    display: none;
+}
+
+.contacts main .contact {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contacts main .contact:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts .page {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--gutter);
+    padding-top: 40px;
+}
+
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacts form label {
+    font-size: 10pt;
+}
+
+.contacts form input {
+    font-size: 12pt;
+}
+
+.contacts form .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contacts form button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: normal;
+    font-size: 12pt;
+}
+
+#contact-info label {
+    font-size: 10pt;
+}
+
+#contact-info input {
+    font-size: 12pt;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact-content button {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: normal;
+    font-size: 12pt;
+}
+
+input:disabled {
+    opacity: .5;
+}
+
+.contact-content #delete {
+    background-color: rgba(255, 51, 51, 0.3);
+}
+
+.contact-content #delete:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.no-contacts-found {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
